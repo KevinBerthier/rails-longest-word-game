@@ -1,0 +1,14 @@
+<p><%= @grid %></p>
+
+<form action="/score">
+  <label for="question">Type your word</label>
+  <input type="text" id="question" name="query" placeholder="Some text">
+  <input type="hidden" name="grid" value="<%= @grid.join %>" >
+  <input type="hidden" name="start" value="<%= @start_time %>" >
+  <input class="btn btn-primary" type="submit" value="Result!">
+</form>
+
+<p><%= session[:current_user_id] %></p>
+
+
+

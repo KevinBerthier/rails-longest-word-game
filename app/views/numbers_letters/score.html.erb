@@ -1,0 +1,10 @@
+
+<ul>
+  <li>Your word : <%= params[:query] %></li>
+  <li>Time Taken to answer : <%= @result[:time] %> seconds</li>
+  <li>Translation : <%=  @result[:translation] %></li>
+  <li>Your score : <%= @result[:score] %></li>
+  <li>Message : <%= @result[:message] %></li>
+</ul>
+
+<%= link_to("Play Again", game_path) %>
